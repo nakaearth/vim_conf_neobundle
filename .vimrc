@@ -1,3 +1,4 @@
-source ~/.vimrcneobundle
-source ~/.vimrc.neocomplcache
-source ~/.vimrc.neosnippet
+source ~/neobundle/.vimrcneobundle
+source ~/neobundle/.vimrc.neocomplcache
+source ~/neobundle/.vimrc.neosnippet
+
