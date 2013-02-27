@@ -18,6 +18,10 @@ set nocompatible               " Be iMproved
 NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
+NeoBundle "kchmck/vim-coffee-script"
+NeoBundle 'git://github.com/tpope/vim-rails.git'
+NeoBundle 'aharisu/vim_goshrepl'
+
 
  filetype plugin indent on     " Required!
  "
@@ -33,6 +37,11 @@ set ts=2
 set sw=2
 set sts=2
 set nu
+" 対応する括弧を強調表示
+set showmatch
+
+set visualbell
+set t_vb=
 
 autocmd FileType php setlocal sw=4 sts=4 ts=4 et
 autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
@@ -44,3 +53,6 @@ autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
    echomsg 'Please execute ":NeoBundleInstall" command.'
    "finish
  endif
+
+ vmap <CR> <Plug>(gosh_repl_send_block)
+
