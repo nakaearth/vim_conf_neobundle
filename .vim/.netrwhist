@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/usr/local/java_project/hoge/src/test'
-let g:netrw_dirhist_2='/usr/local/project/sharetaskboard/app/views/admin/blog_template'
-let g:netrw_dirhist_3='/usr/local/project/sharetaskboard/app/views/my_blog'
-let g:netrw_dirhist_4='/usr/local/project/girlscamera/config/initializers'
-let g:netrw_dirhist_5='/usr/local/project/girlscamera/app/views/smt/info'
-let g:netrw_dirhist_6='/usr/local/project/sharetaskboard'
-let g:netrw_dirhist_7='/usr/local/project/sharetaskboard/app/models/job'
-let g:netrw_dirhist_8='/Users/s_nakamura/Documents'
-let g:netrw_dirhist_9='/usr/local/project/sharetaskboard/spec/factories'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/usr/local/project/girlscamera/_deleted'
+let g:netrw_dirhist_2='/usr/local/project/sharetaskboard'
+let g:netrw_dirhist_3='/usr/local/project/scip_pro'
+let g:netrw_dirhist_4='/Users/s_nakamura/neobundle'
+let g:netrw_dirhist_5='/Users/s_nakamura/neobundle/.vim'

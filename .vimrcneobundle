@@ -21,7 +21,8 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle "kchmck/vim-coffee-script"
 NeoBundle 'git://github.com/tpope/vim-rails.git'
 NeoBundle 'aharisu/vim_goshrepl'
-
+NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'rizzatti/funcoo.vim'
 
  filetype plugin indent on     " Required!
  "
@@ -40,6 +41,8 @@ set nu
 " 対応する括弧を強調表示
 set showmatch
 
+set noswapfile
+
 set visualbell
 set t_vb=
 
@@ -55,4 +58,5 @@ autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
  endif
 
  vmap <CR> <Plug>(gosh_repl_send_block)
+
 
