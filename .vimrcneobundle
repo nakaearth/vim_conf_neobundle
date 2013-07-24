@@ -25,6 +25,7 @@ NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'dbext.vim'
 NeoBundle 'rails.vim'
 NeoBundle 'Gist.vim'
+NeoBundle 'endwise.vim'
 
  filetype plugin indent on     " Required!
  "
@@ -48,6 +49,8 @@ set noswapfile
 set visualbell
 set t_vb=
 
+"let g:endwise_no_mappings=1
+
 autocmd FileType php setlocal sw=4 sts=4 ts=4 et
 autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
 
@@ -60,5 +63,4 @@ autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
  endif
 
  vmap <CR> <Plug>(gosh_repl_send_block)
-
 
