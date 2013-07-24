@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/usr/local/project/girlscamera/_deleted'
-let g:netrw_dirhist_2='/usr/local/project/sharetaskboard'
-let g:netrw_dirhist_3='/usr/local/project/scip_pro'
-let g:netrw_dirhist_4='/Users/s_nakamura/neobundle'
-let g:netrw_dirhist_5='/Users/s_nakamura/neobundle/.vim'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/usr/local/project/toeicfive/app'
+let g:netrw_dirhist_2='/usr/local/project/toeicfive'
+let g:netrw_dirhist_3='/usr/local/project/girlscamera/app/views'
+let g:netrw_dirhist_4='/usr/local/project/girlscamera/app/views/admin/campaign_master'
+let g:netrw_dirhist_5='/usr/local/project/girlscamera/app/views/admin'
+let g:netrw_dirhist_6='/usr/local/project/ruby_samples'
+let g:netrw_dirhist_7='/usr/local/project/girlscamera/app/views/smt/tolot'
+let g:netrw_dirhist_8='/usr/local/project/ruby_samples'
+let g:netrw_dirhist_9='/usr/local/project/daphne'

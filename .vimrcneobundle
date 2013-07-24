@@ -19,10 +19,12 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle "kchmck/vim-coffee-script"
-NeoBundle 'git://github.com/tpope/vim-rails.git'
 NeoBundle 'aharisu/vim_goshrepl'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'rizzatti/funcoo.vim'
+NeoBundle 'dbext.vim'
+NeoBundle 'rails.vim'
+NeoBundle 'Gist.vim'
 
  filetype plugin indent on     " Required!
  "
