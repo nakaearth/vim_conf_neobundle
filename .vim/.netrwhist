@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/usr/local/project/newskitchen_server/spec/fixtures'
 let g:netrw_dirhist_2='/usr/local/project/dog_weather/lib/dog_weather'
+let g:netrw_dirhist_3='/usr/local/project/girlscamera/app/models/stamp'
+let g:netrw_dirhist_4='/usr/local/project/life_photos/app/controllers'
+let g:netrw_dirhist_5='/usr/local/project/girlscamera/app/views/admin/stamps'
