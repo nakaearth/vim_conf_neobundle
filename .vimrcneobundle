@@ -23,6 +23,7 @@ NeoBundle 'aharisu/vim_goshrepl'
 NeoBundle 'rizzatti/dash.vim'
 NeoBundle 'rizzatti/funcoo.vim'
 NeoBundle 'dbext.vim'
+NeoBundle 'mojako/ref-sources.vim'
 NeoBundle 'rails.vim'
 NeoBundle 'Gist.vim'
 NeoBundle 'endwise.vim'
@@ -41,6 +42,8 @@ set ts=2
 set sw=2
 set sts=2
 set nu
+set expandtab
+
 " 対応する括弧を強調表示
 set showmatch
 
