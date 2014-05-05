@@ -1,20 +1,20 @@
 set nocompatible               " Be iMproved
- filetype off                   " Required!
+filetype off                   " Required!
 
- if has('vim_starting')
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
- endif
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
- call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#rc(expand('~/.vim/bundle/'))
 
- " Let NeoBundle manage NeoBundle
- "NeoBundle 'Shougo/neobundle.vim'
+" Let NeoBundle manage NeoBundle
+"NeoBundle 'Shougo/neobundle.vim'
 
- " Recommended to install
- " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
- NeoBundle 'Shougo/vimproc'
+" Recommended to install
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+NeoBundle 'Shougo/vimproc'
 
- " My Bundles here:
+" My Bundles here:
 NeoBundle 'tomasr/molokai'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
@@ -27,14 +27,25 @@ NeoBundle 'mojako/ref-sources.vim'
 NeoBundle 'rails.vim'
 NeoBundle 'Gist.vim'
 NeoBundle 'endwise.vim'
+NeoBundle 'vim-rubocop'
+NeoBundle 'scrooloose/syntastic'
 
- filetype plugin indent on     " Required!
- "
- " Brief help
- " :NeoBundleList          - list configured bundles
- " :NeoBundleInstall(!)    - install(update) bundles
- " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- colorscheme molokai
+" rubyファイルのコーディングチェック
+let g:syntastic_mode_map = { 'mode': 'passive',
+            \ 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_quiet_messages = {'level': 'warnings'}
+
+" .rubocop.ymlの設定
+let g:vimrubocop_config = '/usr/local/project/rubocop.yml'
+
+filetype plugin indent on     " Required!
+"
+" Brief help
+" :NeoBundleList          - list configured bundles
+" :NeoBundleInstall(!)    - install(update) bundles
+" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+colorscheme molokai
 
 syntax on
 set ai
@@ -57,13 +68,13 @@ set t_vb=
 autocmd FileType php setlocal sw=4 sts=4 ts=4 et
 autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
 
- " Installation check.
- if neobundle#exists_not_installed_bundles()
-   echomsg 'Not installed bundles : ' .
-         \ string(neobundle#get_not_installed_bundle_names())
-   echomsg 'Please execute ":NeoBundleInstall" command.'
-   "finish
- endif
+" Installation check.
+if neobundle#exists_not_installed_bundles()
+  echomsg 'Not installed bundles : ' .
+        \ string(neobundle#get_not_installed_bundle_names())
+  echomsg 'Please execute ":NeoBundleInstall" command.'
+  "finish
+endif
 
- vmap <CR> <Plug>(gosh_repl_send_block)
+vmap <CR> <Plug>(gosh_repl_send_block)
 
